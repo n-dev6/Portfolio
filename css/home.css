@@ -202,7 +202,7 @@ header p {
 
 .loop-slider .inner {
     display: flex;
-    animation: loop 5s ease-in-out infinite alternate;
+    animation: loop 10s ease-in-out infinite alternate;
     animation-fill-mode: forwards;
 }
 
@@ -222,9 +222,9 @@ header p {
 
 @keyframes loop {
     0% {
-        transform: translateX(50%);
+        transform: translateX(0%);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-20%);
     }
 }
