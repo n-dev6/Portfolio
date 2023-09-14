@@ -1,6 +1,7 @@
 #footer_section
 {
 	background-color: var(--blue);
+	height: 200px;
 }
 
 #footer_section .content
