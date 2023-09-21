@@ -1,312 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Brakhlia Nory Portfolio</title>
-		<link rel="shortcut icon" type="image/png" href="resources/images/Favicon.webp"/>
+  <head>
+    <title>Brakhlia Nory Portfolio</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="resources/images/Favicon.webp"
+    />
 
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-		<meta name="description" content="Découvrez mon portfolio, explorez mes projets, compétences et réalisations en développement web et logiciel. Contactez-moi pour des opportunités de collaboration.">
-		<script src="js/utils.js"></script>
-		<script src="js/header.js"></script>
-		<script src="js/home.js"></script>
-	
-		<script src="js/projects.js"></script>
-		<script src="js/skills.js"></script>
-		<script src="js/script.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Découvrez mon portfolio, explorez mes projets, compétences et réalisations en développement web et logiciel. Contactez-moi pour des opportunités de collaboration."
+    />
+    <script src="js/utils.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/home.js"></script>
 
-		<link rel="stylesheet" type="text/css" href="css/properties.css"/>
-		<link rel="stylesheet" type="text/css" href="css/style.css"/>
-		<link rel="stylesheet" type="text/css" href="css/header.css"/>
-		<link rel="stylesheet" type="text/css" href="css/menu.css"/>
-		<link rel="stylesheet" type="text/css" href="css/home.css"/>
-	</head>
-	<body>
-		<div id="loading_screen"></div>
-		<div id="safari_warning">
-			<p>
-				You are using Safari. This website is not optimized for this browser.
-				Please use another browser like Chrome or Firefox.
-			</p>
-		</div>
-		<div id="lcp"><p>LCP</p></div>
-		<div id="header_div">
-			<header id="header">
-				<nav class="nav">
-					<div class="logo">
-						<a class="in_animation in_animation_fast">
-							<img src="resources/svgs/Logo.svg" alt="logo" width="35px" height="35px"/>
-						</a>
-					</div>
-					<div class="menu">
-						<ol>
-							<li class="home in_animation"><a class="not_button" href="#home">Accueil</a></li>
-							<li class="about in_animation"><a class="not_button" href="#about">À propos</a></li>
-							<li class="projects in_animation"><a class="not_button" href="#projects">Projets</a></li>
-							<li class="skills in_animation"><a class="not_button" href="#skills">Compétences</a></li>
-							
-							<li class="contact in_animation">
-								<a class="button" href="#contact">
-									<p>Contact</p>
-									<svg class="button_arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.69 17.39"><g>
-										<path class="path_1" d="M8.9 12.4 L8.9 12.4"/>
-										<path class="path_2" d="M16.2 5 8.9 12.4 1.5 5"/></g>
-									</svg>
-								</a>
-							</li>
-						</ol>
-					</div>
-					<svg class="menu_icon" viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg">
-						<line x1="10" y1="10" x2="130" y2="10"/>
-						<line x1="30" y1="50" x2="130" y2="50"/>
-						<line x1="50" y1="90" x2="130" y2="90"/>
-					</svg>
-				</nav>
-			</header>
-		</div>
+    <script src="js/projects.js"></script>
+    <script src="js/skills.js"></script>
+    <script src="js/script.js"></script>
 
-		<div id="menu_div">
-			<svg class="menu_icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-				<line x1="10" y1="10" x2="90" y2="90"/>
-				<line x1="10" y1="90" x2="90" y2="10"/>
-			</svg>
-			<div class="menu">
-				<ol>
-					<li class="home"><a class="not_button" href="#home">Home</a></li>
-					<li class="about"><a class="not_button" href="#about">About</a></li>
-					<li class="projects"><a class="not_button" href="#projects">Projects</a></li>
-					<li class="skills"><a class="not_button" href="#skills">Skills</a></li>
-					<li class="experience"><a class="not_button" href="#experience">Experience</a></li>
-					<li class="contact">
-						<a class="button" href="#contact">
-							<p>Contact</p>
-							<svg class="button_arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.69 17.39"><g>
-								<path class="path_1" d="M8.9 12.4 L8.9 12.4"/>
-								<path class="path_2" d="M16.2 5 8.9 12.4 1.5 5"/></g>
-							</svg>
-						</a>
-					</li>
-				</ol>
-			</div>
-		</div>
+    <link rel="stylesheet" type="text/css" href="css/properties.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="css/home.css" />
+  </head>
+  <body>
+    <div id="loading_screen"></div>
+    <div id="safari_warning">
+      <p>
+        You are using Safari. This website is not optimized for this browser.
+        Please use another browser like Chrome or Firefox.
+      </p>
+    </div>
+    <div id="lcp"><p>LCP</p></div>
+    <div id="header_div">
+      <header id="header">
+        <nav class="nav">
+          <div class="logo">
+            <a class="in_animation in_animation_fast">
+              <img
+                src="resources/svgs/Logo.svg"
+                alt="logo"
+                width="35px"
+                height="35px"
+              />
+            </a>
+          </div>
+          <div class="menu">
+            <ol>
+              <li class="home in_animation">
+                <a class="not_button" href="#home">Accueil</a>
+              </li>
+              <li class="about in_animation">
+                <a class="not_button" href="#about">À propos</a>
+              </li>
+              <li class="projects in_animation">
+                <a class="not_button" href="#projects">Projets</a>
+              </li>
+              <li class="skills in_animation">
+                <a class="not_button" href="#skills">Compétences</a>
+              </li>
 
-		<div id="content">
-			<main id="main">
-				<a id="home"></a>
-				<section class="section" id="home_section">
-					
-					<div class="content">
-						<span class="hi in_animation">Bonjour je m'appelle,</span>
-						<span class="name in_animation">Brakhlia Nory</span>
-						<span class="title in_animation">Je suis Développeur Web</span>
-						<p class="bio in_animation">
-							Développeur web diplômé de 31 ans, passionné par la création et l'innovation.
-							Ouvert à de nouvelles opportunités pour donner vie à des projets web captivants.
-						</p>
-						<div class="home_button in_animation">
-							<a class="button" href="#about">
-								<p>Commencer</p>
-								<svg class="button_arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.69 17.39"><g>
-									<path class="path_1" d="M8.9 12.4 L8.9 12.4"/>
-									<path class="path_2" d="M16.2 5 8.9 12.4 1.5 5"/>
-								</g></svg>
-							</a>
-						</div>
-					</div>
-				</section>
+              <li class="contact in_animation">
+                <a class="button" href="#contact">
+                  <p>Contact</p>
+                  <svg
+                    class="button_arrow"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 17.69 17.39"
+                  >
+                    <g>
+                      <path class="path_1" d="M8.9 12.4 L8.9 12.4" />
+                      <path class="path_2" d="M16.2 5 8.9 12.4 1.5 5" />
+                    </g>
+                  </svg>
+                </a>
+              </li>
+            </ol>
+          </div>
+          <svg
+            class="menu_icon"
+            viewBox="0 0 140 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line x1="10" y1="10" x2="130" y2="10" />
+            <line x1="30" y1="50" x2="130" y2="50" />
+            <line x1="50" y1="90" x2="130" y2="90" />
+          </svg>
+        </nav>
+      </header>
+    </div>
 
-				<link rel="stylesheet" type="text/css" href="css/about.css"/>
+    <div id="menu_div">
+      <svg
+        class="menu_icon"
+        viewBox="0 0 100 100"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line x1="10" y1="10" x2="90" y2="90" />
+        <line x1="10" y1="90" x2="90" y2="10" />
+      </svg>
+      <div class="menu">
+        <ol>
+          <li class="home"><a class="not_button" href="#home">Home</a></li>
+          <li class="about"><a class="not_button" href="#about">About</a></li>
+          <li class="projects">
+            <a class="not_button" href="#projects">Projects</a>
+          </li>
+          <li class="skills">
+            <a class="not_button" href="#skills">Skills</a>
+          </li>
+          <li class="experience">
+            <a class="not_button" href="#experience">Experience</a>
+          </li>
+          <li class="contact">
+            <a class="button" href="#contact">
+              <p>Contact</p>
+              <svg
+                class="button_arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 17.69 17.39"
+              >
+                <g>
+                  <path class="path_1" d="M8.9 12.4 L8.9 12.4" />
+                  <path class="path_2" d="M16.2 5 8.9 12.4 1.5 5" />
+                </g>
+              </svg>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </div>
 
-				<a id="about"></a>
-				<section class="section" id="about_section">
-					<div class="content">
-						<span class="section_title">Qui suis-je ?</span>
-						<div class="about_content">
-							<p class="p_1">
-								Profondément investi dans le domaine de la création et de l'innovation. 
-								Ma préférence va au développement web, mais je nourris également un intérêt particulier pour l'univers du développement de jeux vidéo grâce à Unity. 
-								À la suite de mon cursus de formation en développement web.
-								<br><br>
-								Mon objectif professionnel à long terme consiste à parfaire mon expertise en développement web en élargissant mes compétences dans divers langages de programmation.
-								<br><br>
-								Je suis pleinement préparé à relever les défis inhérents à ce domaine, et j'espère avoir l'opportunité de faire progresser ma carrière en tant que développeur web.
-							</p>
-							
-						</div>
-					</div>
-				</section>
-				<div class="section_end about_end"></div>
+    <div id="content">
+      <main id="main">
+        <a id="home"></a>
+        <section class="section" id="home_section">
+          <div class="content">
+            <span class="hi in_animation">Bonjour je m'appelle,</span>
+            <span class="name in_animation">Brakhlia Nory</span>
+            <span class="title in_animation">Je suis Développeur Web</span>
+            <p class="bio in_animation">
+              Développeur web diplômé de 31 ans, passionné par la création et
+              l'innovation. Ouvert à de nouvelles opportunités pour donner vie à
+              des projets web captivants.
+            </p>
+            <div class="home_button in_animation">
+              <a class="button" href="#about">
+                <p>Commencer</p>
+                <svg
+                  class="button_arrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 17.69 17.39"
+                >
+                  <g>
+                    <path class="path_1" d="M8.9 12.4 L8.9 12.4" />
+                    <path class="path_2" d="M16.2 5 8.9 12.4 1.5 5" />
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
 
-				<link rel="stylesheet" type="text/css" href="css/projects.css"/>
-				<link rel="stylesheet" type="text/css" href="css/other_projects.css"/>
+        <link rel="stylesheet" type="text/css" href="css/about.css" />
 
-				<a id="projects"></a>
-				<section class="section" id="projects_section">
-					<div class="content leaning">
-						<span class="section_title">Certains de mes projets</span>
-						
-						<div class="projects_content">
-							<section class="sub-section-alternative" id="projects">
-								
-								<div class="project-container">
-								  <div class="project-card">
-									<a href="https://github.com/n-dev6/Projet-2" target="_blank">
-									<img
-									  class="project-image"
-									  src="images/project1.jpg"
-									  alt="Projet de developpement de site "
-									/></a>
-									<h3>Booki</h3>
-									<br>
-									<p class="p_1">
-										Projet réalisé dans le cadre du parcours Développeur Web d'OpenClassrooms. J'ai conçu et développé un site web permettant aux utilisateurs de rechercher des hébergements et des activités dans la ville de leur choix. 
-										Ce projet m'a permis de mettre en pratique mes compétences en développement web et en intégration de fonctionnalités interactives.
-									</p>
-									<br />
+        <a id="about"></a>
+        <section class="section" id="about_section">
+          <div class="content">
+            <span class="section_title">Qui suis-je ?</span>
+            <div class="about_content">
+              <p class="p_1">
+                Profondément investi dans le domaine de la création et de
+                l'innovation. Ma préférence va au développement web, mais je
+                nourris également un intérêt particulier pour l'univers du
+                développement de jeux vidéo grâce à Unity. À la suite de mon
+                cursus de formation en développement web.
+                <br /><br />
+                Mon objectif professionnel à long terme consiste à parfaire mon
+                expertise en développement web en élargissant mes compétences
+                dans divers langages de programmation.
+                <br /><br />
+                Je suis pleinement préparé à relever les défis inhérents à ce
+                domaine, et j'espère avoir l'opportunité de faire progresser ma
+                carrière en tant que développeur web.
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="section_end about_end"></div>
 
-								  </div>
-								  <div class="project-card">
-									<a href="https://github.com/n-dev6/Portfolio-architecte-sophie-bluel" target="_blank">
-									<img
-									  class="project-image"
-									  src="images/project2.jpg"
-									  alt="Projet de developpement de site architecte "
-									/></a>
-									<h3>Sophie Bluel</h3>
-									<br>
-									<p class="p_1">
-										Un projet passionnant du parcours Développeur Web d'OpenClassrooms où j'ai créé la page de présentation des travaux d'un architecte renommé.
-										 J'ai également développé la page de connexion de l'administrateur du site et une modale pour améliorer l'expérience utilisateur. 
-									</p>
-									
-									
-								  </div>
-								  <div class="project-card">
-									<a href="https://github.com/n-dev6/nina-carducci.github.io" target="_blank">
-									  <img
-										class="project-image"
-										src="images/project3.png"
-										alt="Projet de développement de site SEO"
-									  /></a>
-									  <h3>Nina Carducci</h3>
-									  <br>
-									  <p class="p_1"> 
-										J'ai réalisé un audit Lighthouse complet pour identifier les problèmes, puis j'ai apporté des améliorations significatives pour améliorer les performances 
-										et la stabilité du site ainsi que le SEO. 
-										Ce projet a été une opportunité d'acquérir des compétences en débogage et en optimisation.
-									  </p>
-									
-								  </div>
-								  <div class="project-card">
-									<a href="https://github.com/n-dev6/kasa" target="_blank">
-									<img
-									  class="project-image"
-									  src="images/Project4.jpg"
-									  alt="Projet de developpement de site React"
-									/></a>
-									<h3>Kasa</h3>
-									<br>
-									<p class="p_1">
-										J'ai commencé par mettre en place le projet React, puis j'ai créé l'ensemble des composants React et des routes en utilisant React Router, 
-										en veillant à ce que le site soit entièrement responsive, conformément aux maquettes Figma. 
-										Ce projet a été un défi passionnant pour mettre en pratique mes compétences en développement front-end avancé.
-									</p>
-								  </div>
-								</div>
-							  </section>
-						</div>
-						<div class="other_projects_content"></div>
-					</div>
-				</section>
-				
+        <link rel="stylesheet" type="text/css" href="css/projects.css" />
+        <link rel="stylesheet" type="text/css" href="css/other_projects.css" />
 
-				<link rel="stylesheet" type="text/css" href="css/skills.css"/>
+        <a id="projects"></a>
+        <section class="section" id="projects_section">
+          <div class="content leaning">
+            <span class="section_title">Certains de mes projets</span>
 
-				<a id="skills"></a>
-				<section class="section" id="skills_section">
-					<div class="content leaning">
-						<span class="section_title"> Mes competences </span>
-						<div class="tag-list">
-							<div class="loop-slider">
-								<div class="inner" id="tagList">
-									<!-- JavaScript will generate tags here -->
-								</div>
-							</div>
-						</div>
-						<div class="fade"></div>
-						
-						<div class="skills_content">
-							<div class="box"></div>
-						</div>
-					</div>
-				</section>
-				<div class="section_end skills_end"></div>
-				<div class="section_end experience_end"></div>
+            <div class="projects_content">
+              <section class="sub-section-alternative" id="projects">
+                <div class="project-container">
+                  <div class="project-card">
+                    <a
+                      href="https://github.com/n-dev6/Projet-2"
+                      target="_blank"
+                    >
+                      <img
+                        class="project-image"
+                        src="images/project1.jpg"
+                        alt="Projet de developpement de site "
+                    /></a>
+                    <h3>Booki</h3>
+                    <br />
+                    <p class="p_1">
+                      Projet réalisé dans le cadre du parcours Développeur Web
+                      d'OpenClassrooms. J'ai conçu et développé un site web
+                      permettant aux utilisateurs de rechercher des hébergements
+                      et des activités dans la ville de leur choix. Ce projet
+                      m'a permis de mettre en pratique mes compétences en
+                      développement web et en intégration de fonctionnalités
+                      interactives.
+                    </p>
+                    <br />
+                  </div>
+                  <div class="project-card">
+                    <a
+                      href="https://github.com/n-dev6/Portfolio-architecte-sophie-bluel"
+                      target="_blank"
+                    >
+                      <img
+                        class="project-image"
+                        src="images/project2.jpg"
+                        alt="Projet de developpement de site architecte "
+                    /></a>
+                    <h3>Sophie Bluel</h3>
+                    <br />
+                    <p class="p_1">
+                      Un projet passionnant du parcours Développeur Web
+                      d'OpenClassrooms où j'ai créé la page de présentation des
+                      travaux d'un architecte renommé. J'ai également développé
+                      la page de connexion de l'administrateur du site et une
+                      modale pour améliorer l'expérience utilisateur.
+                    </p>
+                  </div>
+                  <div class="project-card">
+                    <a
+                      href="https://github.com/n-dev6/nina-carducci.github.io"
+                      target="_blank"
+                    >
+                      <img
+                        class="project-image"
+                        src="images/project3.png"
+                        alt="Projet de développement de site SEO"
+                    /></a>
+                    <h3>Nina Carducci</h3>
+                    <br />
+                    <p class="p_1">
+                      J'ai réalisé un audit Lighthouse complet pour identifier
+                      les problèmes, puis j'ai apporté des améliorations
+                      significatives pour améliorer les performances et la
+                      stabilité du site ainsi que le SEO. Ce projet a été une
+                      opportunité d'acquérir des compétences en débogage et en
+                      optimisation.
+                    </p>
+                  </div>
+                  <div class="project-card">
+                    <a href="https://github.com/n-dev6/kasa" target="_blank">
+                      <img
+                        class="project-image"
+                        src="images/Project4.jpg"
+                        alt="Projet de developpement de site React"
+                    /></a>
+                    <h3>Kasa</h3>
+                    <br />
+                    <p class="p_1">
+                      J'ai commencé par mettre en place le projet React, puis
+                      j'ai créé l'ensemble des composants React et des routes en
+                      utilisant React Router, en veillant à ce que le site soit
+                      entièrement responsive, conformément aux maquettes Figma.
+                      Ce projet a été un défi passionnant pour mettre en
+                      pratique mes compétences en développement front-end
+                      avancé.
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="other_projects_content"></div>
+          </div>
+        </section>
 
-				<link rel="stylesheet" type="text/css" href="css/contact.css"/>
+        <link rel="stylesheet" type="text/css" href="css/skills.css" />
 
-				<a id="contact"></a>
-				
-				<section class="section" id="contact_section">
-					<div class="content leaning">
-						<span class="section_title">Me contacter</span>
-						<div class="contact_content">
-							<div class="social_line">
-								<a class="social_link" href="https://www.linkedin.com/in/brakhlia-nory/" target="_blank" style="--size: 119.13px;">
-									<img src="resources/svgs/contact/Linkedin.svg" alt="linkedin" width="50px" height="50px"/>
-									<div class="social_text">
-										<span>in/brakhlia-nory</span>
-									</div>
-								</a>
-							</div>
-							<div class="social_line">
-								<a class="social_link" href="https://github.com/n-dev6" target="_blank" style="--size: 90.65px;">
-									<img src="resources/svgs/contact/GitHub.svg" alt="github" width="50px" height="50px"/>
-									<div class="social_text">
-										<span>brakhlianory</span>
-									</div>
-								</a>
-								<a class="social_link" href="https://discord.gg/WSvpcA3jJu" target="_blank" style="--size: 168px;">
-									<img src="resources/svgs/contact/Discord.svg" alt="discord" width="50px" height="50px"/>
-									<div class="social_text">
-										<span>kaz5455</span>
-									</div>
-								</a>
-							</div>
-							<div class="social_line">
-								<div class="social_link" style="--size: 202.84px;">
-									<a href="mailto: nory.brakhlia@gmail.com" target="_blank">
-										<img src="resources/svgs/contact/Mail.svg" alt="mail" width="50px" height="50px"/>
-									</a>
-									<div class="social_text">
-										<span>nory.brakhlia@gmail.com</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+        <a id="skills"></a>
+        <section class="section" id="skills_section">
+          <div class="content leaning">
+            <span class="section_title"> Mes competences </span>
+            <div class="tag-list">
+              <div class="loop-slider">
+                <div class="inner" id="tagList">
+                  <!-- JavaScript will generate tags here -->
+                </div>
+              </div>
+            </div>
+            <div class="fade"></div>
 
-				<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+            <div class="skills_content">
+              <div class="box"></div>
+            </div>
+          </div>
+        </section>
+        <div class="section_end skills_end"></div>
+        <div class="section_end experience_end"></div>
 
-				<footer class="section" id="footer_section">
-					<div class="content">
-						<div class="footer_content">			
-								<span> 2023 Brakhlia Nory</span>				
-							<a class="" href="https://github.com/n-dev6?tab=repositories" target="_blank">
-								<span>Voici mes repertoires GitHub</span>
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.05 20.31"><g><path d="M7.26 16.34c-4.11 1.23-4.11-2.06-5.76-2.47M13 18.81V15.62a2.78 2.78 0 0 0-.77-2.15c2.59-.28 5.3-1.26 5.3-5.76a4.46 4.46 0 0 0-1.23-3.08 4.18 4.18 0 0 0-.08-3.11s-1-.29-3.22 1.22a11 11 0 0 0-5.76 0C5 1.23 4 1.52 4 1.52A4.18 4.18 0 0 0 4 4.63 4.48 4.48 0 0 0 2.73 7.74c0 4.46 2.72 5.44 5.31 5.76a2.8 2.8 0 0 0-.78 2.12v3.19"/></g></svg>
-							</a>
-						</div>
-						<div class="footer_content">
-							<p>
-								
-							</p>
-						</div>
-					</div>
-				</footer>
-			</main>
-		</div>
-	</body>
+        <link rel="stylesheet" type="text/css" href="css/contact.css" />
+
+        <a id="contact"></a>
+
+        <section class="section" id="contact_section">
+          <div class="content leaning">
+            <span class="section_title">Me contacter</span>
+            <div class="contact_content">
+              <div class="social_line">
+                <a
+                  class="social_link"
+                  href="https://www.linkedin.com/in/brakhlia-nory/"
+                  target="_blank"
+                  style="--size: 119.13px"
+                >
+                  <img
+                    src="resources/svgs/contact/Linkedin.svg"
+                    alt="linkedin"
+                    width="50px"
+                    height="50px"
+                  />
+                  <div class="social_text">
+                    <span>in/brakhlia-nory</span>
+                  </div>
+                </a>
+              </div>
+              <div class="social_line">
+                <a
+                  class="social_link"
+                  href="https://github.com/n-dev6"
+                  target="_blank"
+                  style="--size: 90.65px"
+                >
+                  <img
+                    src="resources/svgs/contact/GitHub.svg"
+                    alt="github"
+                    width="50px"
+                    height="50px"
+                  />
+                  <div class="social_text">
+                    <span>brakhlianory</span>
+                  </div>
+                </a>
+                <a
+                  class="social_link"
+                  href=""
+                  target="_blank"
+                  style="--size: 168px"
+                >
+                  <img
+                    src="resources/svgs/contact/Discord.svg"
+                    alt="discord"
+                    width="50px"
+                    height="50px"
+                  />
+                  <div class="social_text">
+                    <span>kaz5455</span>
+                  </div>
+                </a>
+              </div>
+              <div class="social_line">
+                <div class="social_link" style="--size: 202.84px">
+                  <a href="mailto: nory.brakhlia@gmail.com" target="_blank">
+                    <img
+                      src="resources/svgs/contact/Mail.svg"
+                      alt="mail"
+                      width="50px"
+                      height="50px"
+                    />
+                  </a>
+                  <div class="social_text">
+                    <span>nory.brakhlia@gmail.com</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <link rel="stylesheet" type="text/css" href="css/footer.css" />
+
+        <footer class="section" id="footer_section">
+          <div class="content">
+            <div class="footer_content">
+              <span> 2023 Brakhlia Nory</span>
+              <a
+                class=""
+                href="https://github.com/n-dev6?tab=repositories"
+                target="_blank"
+              >
+                <span>Voici mes repertoires GitHub</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 19.05 20.31"
+                >
+                  <g>
+                    <path
+                      d="M7.26 16.34c-4.11 1.23-4.11-2.06-5.76-2.47M13 18.81V15.62a2.78 2.78 0 0 0-.77-2.15c2.59-.28 5.3-1.26 5.3-5.76a4.46 4.46 0 0 0-1.23-3.08 4.18 4.18 0 0 0-.08-3.11s-1-.29-3.22 1.22a11 11 0 0 0-5.76 0C5 1.23 4 1.52 4 1.52A4.18 4.18 0 0 0 4 4.63 4.48 4.48 0 0 0 2.73 7.74c0 4.46 2.72 5.44 5.31 5.76a2.8 2.8 0 0 0-.78 2.12v3.19"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </div>
+            <div class="footer_content">
+              <p></p>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </body>
 </html>
