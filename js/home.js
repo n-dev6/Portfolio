@@ -35,10 +35,10 @@ function home_in_animations()
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    const TAGS = ['HTML', 'CSS', 'JavaScript', 'Typescript', 'Tailwind', 'React', 'Next.js', 'UI/UX', 'SVG', 'animation', 'webdev','Unity'];
+    const TAGS = ['HTML', 'CSS', 'JavaScript', 'Typescript','React', 'Next.js', 'UI/UX', 'SVG', 'Animation', 'Webdev','Unity'];
     const DURATION = 15000;
     const ROWS = 5;
-    const TAGS_PER_ROW = 5;
+    const TAGS_PER_ROW = 4;
 
     const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
     const shuffle = arr => [...arr].sort(() => .5 - Math.random());
