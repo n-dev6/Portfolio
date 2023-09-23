@@ -102,7 +102,7 @@
     border-radius: 10px;
     font-family: "Montserrat", sans-serif;
     font-size: 15px;
-    border: solid 3px rgb(193 193 193);
+    border: solid 3px rgb(85, 83, 83);
     flex-direction: column;
     align-content: center;
     justify-content: center;
@@ -280,11 +280,10 @@ h2{
     opacity: 1;
 }
 
-/* Styles pour la section de compétences */
 #skills_section {
-    text-align: center;
     background-color: #f0f0f0;
-    padding: 0px 0;
+    padding: 50px 0;
+    text-align: center;
 }
 
 .content {
@@ -300,57 +299,70 @@ h2{
 }
 
 .skills-list {
-    list-style: none;
-    padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.skill-item {
-    width: 180px;
-    margin: 10px;
+.skill-card {
+    width: 250px;
+    margin: 20px;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     text-align: center;
-    font-size: 18px;
-    color: #333;
     transition: transform 0.2s ease-in-out;
 }
+.skill-level {
+    font-size: 18px;
+    color: #666; /* Couleur pour le texte du niveau de compétence */
+    margin-top: 10px;
+}
 
-.skill-item:hover {
+.skill-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-/* Ajoutez des styles spécifiques à chaque compétence si nécessaire */
-.skill-item.react {
-    background-color: #358aa1; /* Couleur pour React */
-    color: #fff;
 }
 
-.skill-item.html-css {
-    background-color: #f16529; /* Couleur pour HTML/CSS */
-    color: #fff;
-}
-
-.skill-item.node-express {
-    background-color: #6cc24a; /* Couleur pour Node.js/Express */
-    color: #fff;
-}
-
-.skill-item.unity {
-    background-color: #000; /* Couleur pour Unity */
-    color: #fff;
-}
-
-.skill-item.typescript {
-    background-color: #3178c6; /* Couleur pour TypeScript */
-    color: #fff;
-}
-
-.skill-item.javascript {
-    background-color: #f0db4f; /* Couleur pour JavaScript */
+.skill-title {
+    font-size: 24px;
     color: #333;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar.react-progress {
+    width: 60%; /* Ajustez la largeur pour refléter votre niveau de compétence */
+    background-color: #61dafb7a; /* Couleur pour React */
+}
+
+.progress-bar.html-css-progress {
+    width: 80%; /* Ajustez la largeur pour refléter votre niveau de compétence */
+    background-color: #f16529b0; /* Couleur pour HTML/CSS */
+}
+
+.progress-bar.node-express-progress {
+    width: 30%; /* Ajustez la largeur pour refléter votre niveau de compétence */
+    background-color: #6cc24a; /* Couleur pour Node.js/Express */
+}
+
+.progress-bar.unity-progress {
+    width: 50%; /* Ajustez la largeur pour refléter votre niveau de compétence */
+    background-color: #000000b0; /* Couleur pour Unity */
+}
+
+.progress-bar.typescript-progress {
+    width: 20%; /* Ajustez la largeur pour refléter votre niveau de compétence */
+    background-color: #3178c6; /* Couleur pour TypeScript */
+}
+
+.progress-bar.javascript-progress {
+    width: 70%; /* Ajustez la largeur pour refléter votre niveau de compétence */
+    background-color: #f0db4fa1; /* Couleur pour JavaScript */
 }
