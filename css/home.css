@@ -279,3 +279,79 @@ h2{
 .lien-anime:hover::after {
     opacity: 1;
 }
+
+/* Styles pour la section de compétences */
+#skills_section {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 50px 0;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section_title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-item {
+    width: 180px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    transition: transform 0.2s ease-in-out;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajoutez des styles spécifiques à chaque compétence si nécessaire */
+.skill-item.react {
+    background-color: #61dafb; /* Couleur pour React */
+    color: #fff;
+}
+
+.skill-item.html-css {
+    background-color: #f16529; /* Couleur pour HTML/CSS */
+    color: #fff;
+}
+
+.skill-item.node-express {
+    background-color: #6cc24a; /* Couleur pour Node.js/Express */
+    color: #fff;
+}
+
+.skill-item.unity {
+    background-color: #000; /* Couleur pour Unity */
+    color: #fff;
+}
+
+.skill-item.typescript {
+    background-color: #3178c6; /* Couleur pour TypeScript */
+    color: #fff;
+}
+
+.skill-item.javascript {
+    background-color: #f0db4f; /* Couleur pour JavaScript */
+    color: #333;
+}
