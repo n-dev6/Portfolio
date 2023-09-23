@@ -284,7 +284,7 @@ h2{
 #skills_section {
     text-align: center;
     background-color: #f0f0f0;
-    padding: 50px 0;
+    padding: 0px 0;
 }
 
 .content {
@@ -324,7 +324,6 @@ h2{
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
-
 /* Ajoutez des styles spécifiques à chaque compétence si nécessaire */
 .skill-item.react {
     background-color: #358aa1; /* Couleur pour React */
