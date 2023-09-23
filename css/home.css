@@ -205,7 +205,12 @@ header p {
     animation: loop 10s ease-in-out infinite alternate;
     animation-fill-mode: forwards;
 }
-
+h1{
+    font-size: 100px;
+}
+h2{
+    font-size: 80px;
+}
 .tag {
     display: flex;
     margin-left: 5%;
