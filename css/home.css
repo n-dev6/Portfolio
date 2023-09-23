@@ -93,10 +93,10 @@
     align-items: center;
 }
 .project-card {
-    width: 350px;
+    width: 370px;
     background: #ffffff;
     color: black;
-    height: 380px;
+    height: 450px;
     display: flex;
     margin: 10px;
     border-radius: 10px;
@@ -127,9 +127,12 @@
 }
 
 .project-image {
-    margin-top: 25px;
+    margin-top: 5px;
     width: 250px;
     border-radius: 10px;
+    max-width: 250px;
+    max-height: 100px;
+    
 }
 
 hr {
@@ -232,4 +235,47 @@ h2{
     100% {
         transform: translateX(-20%);
     }
+}
+.resume-competences {
+    list-style-type: none;
+    padding: 15px;
+}
+
+.resume-competences li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* Style pour les titres des compétences */
+.resume-competences li::before {
+    content: "✓"; /* Symbole de vérification */
+    margin-right: 10px;
+    color: #007bff;
+    font-weight: bold;
+}
+.lien-anime {
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+    text-align: center; /* Centrer le texte horizontalement */
+    display: inline-block; /* Permet de centrer la flèche sous le texte */
+    position: relative;
+}
+
+.lien-anime::after {
+    content: " ➔"; /* Flèche de direction */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    left: 50%; /* Position horizontale au milieu */
+    bottom: -20px; /* Ajustez la valeur pour aligner la flèche verticalement */
+    transform: translateX(-50%); /* Décalage horizontal pour centrer */
+}
+
+.lien-anime:hover::after {
+    opacity: 1;
 }
