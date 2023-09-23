@@ -206,10 +206,10 @@ header p {
     animation-fill-mode: forwards;
 }
 h1{
-    font-size: 60px;
+    font-size: 100px  !important;
 }
 h2{
-    font-size: 40px;
+    font-size: 80px !important;
 }
 .tag {
     display: flex;
