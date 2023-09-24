@@ -102,7 +102,7 @@
     border-radius: 10px;
     font-family: "Montserrat", sans-serif;
     font-size: 15px;
-    border: solid 3px rgb(85, 83, 83);
+    border: 2px solid rgb(0 0 0 / 70%);; /* Bordure solide avec une transparence de 40% */
     flex-direction: column;
     align-content: center;
     justify-content: center;
@@ -209,10 +209,10 @@ header p {
     animation-fill-mode: forwards;
 }
 h1{
-    font-size: 100px  !important;
+    font-size: 85px  !important;
 }
 h2{
-    font-size: 80px !important;
+    font-size: 75px !important;
 }
 .tag {
     display: flex;

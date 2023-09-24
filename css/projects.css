@@ -1,6 +1,7 @@
-#projects_section
-{
-	background-color: rgb(35 33 33);
+#projects_section {
+    background: radial-gradient(ellipse at bottom, #0b1829 0%, #000000 100%);
+    padding: 50px 0;
+    text-align: center;
 }
 
 .projects_end

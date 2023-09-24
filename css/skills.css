@@ -11,6 +11,7 @@
 #skills_section .section_title
 {
 	color: var(--black_title);
+	margin-top: 5%;
 }
 
 #skills_section .skills_content
