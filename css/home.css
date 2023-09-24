@@ -366,3 +366,12 @@ h2{
     width: 70%; /* Ajustez la largeur pour refléter votre niveau de compétence */
     background-color: #f0db4fa1; /* Couleur pour JavaScript */
 }
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 63px !important;
+    }
+    h2 {
+        font-size: 39px !important;
+    }
+}
